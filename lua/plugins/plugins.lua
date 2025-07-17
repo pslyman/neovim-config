@@ -1,6 +1,5 @@
 return {
   { "nvim-tree/nvim-web-devicons", opts = {} },
-  { "akinsho/toggleterm.nvim", version = "*", config = true },
   {
     "folke/snacks.nvim",
     opts = {
