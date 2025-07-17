@@ -1,0 +1,121 @@
+STUFF I WISH I COULD REMEMBER
+Space e - Reopen explorer
+H - show hidden files
+S and H (capital) - switch code tabs
+gr - jump to declarations of function
+git checkout -- . -> discard stage and unstaged changes
+git commit --amend
+lazygit, to merge conflicts: 2 to enter files pane, arrow down to file, hit enter. 
+after splitting terminal, use :terminal to instantiate
+Ctrl \, Ctrl N -> return terminal to normal mode
+git reset --soft HEAD~ -> undo last commit but leave changes staged
+g, c - comment selected lines|N
+10j - go down 10 lines
+10k - go up 10 lines
+Space / - global search by term
+git reset --hard origin/branchName - reset local with remote, lose all changes
+
+ADDITIONAL NOTES
+h,j,k,l - navigate left, down, up, right
+:q! - Quit (discard)
+Esc - exit to navigate mode
+x - delete character
+A - Append
+:wq - Write then Quit
+dw - Delete Word ([d]elete + [w]ord (or start of next word))
+d$ - Delete to end of line ([d] + [$] (end of line regex))
+de - Delete to End of current word. 
+
+counts:
+2w - move 2 Words forward
+3e - move cursor to End of third word
+0 - jump to beginning
+d2w - Delete 2 Words
+
+u - Undo
+U - Undo whole line
+Ctrl + R - Redo
+dd - delete line (and store)
+	p - Put line below cursor
+	P - Put line above cursor
+2dd - delete 2 lines - etc
+c - Change | deletes then enters edit mode for you to correct
+c$ - Change to End | then allow for edit.
+
+20G - Go to line 20
+1G - Go to 1st line
+gg - Go to beginning
+G - Go to end of file
+Ctrl + G - see current file location
+
+/ - search by text
+	n - Next
+	N - Previous
+? - search in backward direction
+
+Ctrl + o - Go back to previous location
+Ctrl + i - Go forward to future locations
+
+% - Jump to matching bracket or paren pair
+
+:s/old/new/g - Substitute <old> with <new> -> Globally
+:s/old/new/ - Same, not globally
+
+:#,#s/old/new/g - Same, but between lines # and #
+:$s/old/new/gc - Substitute globally but prompt each instance
+
+
+:w - Write (save)
+:w filename - Write to new file
+
+o - Open new line below cursor
+O - Open new line above cursor
+
+a - Append after cursor
+A - Append after line
+
+r - Replace character
+R - Replace characters until you stop
+
+y - yank (copy)
+	yw - yank word
+p - Put (paste) after cursor
+P - Put (paste) before cursor
+
+K - show docs on type information
+
+Space - s - g -> Grep search in all files
+Space - c - a -> Code actions on cursor
+Space - u - C -> change color theme
+Space - f - b -> change between buffers
+[ + b - go to previous buffer
+] + b - go to next buffer
+
+SPLIT
+Space + | - Split buffer (vertical)
+Space + - - Split buffer (horizontal)
+Ctrl H - Left split
+Ctrl L - Right split
+Ctrl J - Down split
+Ctrl K - Up split
+Ctrl up, down, right, left to control size of split
+
+
+Space s r - global replace
+Space g g - LazyGit
+
+
+
+:! - Enter shell command, outside of vim
+
+
+From shell:
+nvim <file or path> - Opens target in Neovim
+
+Buffers and Windows
+Ctrl + W, s - Open buffer
+Ctrl + W, q - Close buffer
+Ctrl + <arrow> - Move to another buffer
+:buffers - see list of buffers
+:ls      - see list of buffers
+
