@@ -14,6 +14,8 @@ g, c - comment selected lines|N
 10k - go up 10 lines
 Space / - global search by term
 git reset --hard origin/branchName - reset local with remote, lose all changes
+2 Ctrl / - split terminal next to existing one
+Ctrl + h,j,k, or l - Switch to window in that direction
 
 ADDITIONAL NOTES
 h,j,k,l - navigate left, down, up, right
