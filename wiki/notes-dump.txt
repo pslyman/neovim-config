@@ -18,6 +18,7 @@ git reset --hard origin/branchName - reset local with remote, lose all changes
 Ctrl + h,j,k, or l - Switch to window in that direction
 gd - jump to declaration
 1, Ctrl + G
+Ctrl + e - scroll last line up the window
 
 ADDITIONAL NOTES
 h,j,k,l - navigate left, down, up, right
