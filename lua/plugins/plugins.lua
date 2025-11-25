@@ -51,4 +51,7 @@ return {
       },
     },
   },
+  {
+    "BurntSushi/ripgrep",
+  },
 }

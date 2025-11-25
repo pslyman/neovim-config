@@ -1,3 +1,23 @@
+PRACTICE THE BASIC
+w,e,b - Word (forward), End of word, and Back a word
+  W,E,B - WORD moves in more discriminate chunks
+o - new line below then edit
+O - new line above then edit
+x - delete character
+s - replace with characters
+r - replace with character
+0 - beginning of line, $ - end of line, _ - first WORD in line
+f char - find character forward
+F char - find character backward
+  ; repeat last motion
+t char - move till character forward
+T char - move till character backward
+  ; repeat last motion
+D - delete to end of line from cursor
+yy - yank current line
+p - paste below cursor
+P - paste above cursor
+
 STUFF I WISH I COULD REMEMBER
 Space e - Reopen explorer
 H - show hidden files
@@ -18,6 +38,7 @@ git reset --hard origin/branchName - reset local with remote, lose all changes
 Ctrl + h,j,k, or l - Switch to window in that direction
 gd - jump to declaration
 1, Ctrl + G
+Ctrl + e - scroll last line up the window
 
 ADDITIONAL NOTES
 h,j,k,l - navigate left, down, up, right
