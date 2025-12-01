@@ -43,15 +43,19 @@ return {
     opts = {},
   },
   {
-    "mikeoz32/nvim-agent",
-    opts = {
-      api = {
-        provider = "github-copilot",
-        model = "claude-sonnet-4.5",
-      },
-    },
-  },
-  {
     "BurntSushi/ripgrep",
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    lazy = false,
+    branch = "main",
+    build = ":TSUpdate",
+  },
+  {
+  "olimorris/codecompanion.nvim",
+  opts = {},
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+  },
+},
 }
