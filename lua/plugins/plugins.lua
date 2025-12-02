@@ -1,4 +1,16 @@
 return {
+  -- Colorscheme
+  {
+    "whatyouhide/vim-gotham",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gotham",
+    },
+  },
   { "nvim-tree/nvim-web-devicons", opts = {} },
   {
     "ibhagwan/fzf-lua",
