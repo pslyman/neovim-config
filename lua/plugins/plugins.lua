@@ -1,4 +1,7 @@
 return {
+  -- Mason (using new repo names)
+  { "mason-org/mason.nvim", opts = {} },
+  { "mason-org/mason-lspconfig.nvim", opts = {} },
   -- Colorscheme
   {
     "whatyouhide/vim-gotham",
@@ -64,10 +67,28 @@ return {
     build = ":TSUpdate",
   },
   {
-  "olimorris/codecompanion.nvim",
-  opts = {},
-  dependencies = {
-    "nvim-lua/plenary.nvim",
+    "Davidyz/VectorCode",
+    version = "*",
+    dependencies = { "nvim-lua/plenary.nvim" },
   },
-},
+  {
+    "olimorris/codecompanion.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "Davidyz/VectorCode",
+    },
+    opts = function()
+      return {
+        extensions = {
+          vectorcode = {
+            opts = {
+              tool_group = {
+                enabled = true,
+              },
+            },
+          },
+        },
+      }
+    end,
+  },
 }
