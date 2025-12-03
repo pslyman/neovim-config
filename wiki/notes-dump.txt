@@ -1,4 +1,6 @@
 PRACTICE THE BASIC
+'^ - Go to last nine you navigated away from. ' = open Return-To menu
+  - Also Ctrl + o and Ctrl + i to go back and forward
 w,e,b - Word (forward), End of word, and Back a word
   W,E,B - WORD moves in more discriminate chunks
 o - new line below then edit
