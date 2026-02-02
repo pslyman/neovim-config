@@ -80,20 +80,23 @@ return {
     "olimorris/codecompanion.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
       "Davidyz/VectorCode",
     },
-    opts = function()
-      return {
-        extensions = {
-          vectorcode = {
-            opts = {
-              tool_group = {
-                enabled = true,
-              },
+    opts = {
+      extensions = {
+        vectorcode = {
+          opts = {
+            tool_group = {
+              enabled = true,
             },
           },
         },
-      }
-    end,
+      },
+      -- NOTE: The log_level is in `opts.opts` if you need debugging
+      -- opts = {
+      --   log_level = "DEBUG",
+      -- },
+    },
   },
 }
