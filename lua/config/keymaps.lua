@@ -19,3 +19,30 @@ vim.keymap.set("t", "<C-_>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
 -- Exit terminal mode with Esc
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
+
+-- Diffview (side-by-side git diffs)
+local function diffview_cmd(cmd)
+  pcall(vim.cmd, cmd)
+end
+
+vim.keymap.set("n", "<leader>gd", function()
+  local ok, lib = pcall(require, "diffview.lib")
+  if ok and lib.get_current_view() then
+    diffview_cmd("DiffviewClose")
+  else
+    diffview_cmd("DiffviewOpen")
+  end
+end, { desc = "Git diff (Diffview)" })
+
+vim.keymap.set("n", "<leader>gD", function()
+  local ok, lib = pcall(require, "diffview.lib")
+  if ok and lib.get_current_view() then
+    diffview_cmd("DiffviewClose")
+  else
+    diffview_cmd("DiffviewOpen --cached")
+  end
+end, { desc = "Git diff staged (Diffview)" })
+
+vim.keymap.set("n", "<leader>gq", function()
+  diffview_cmd("DiffviewClose")
+end, { desc = "Diffview close" })
