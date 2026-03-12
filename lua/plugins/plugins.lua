@@ -83,32 +83,4 @@ return {
       },
     },
   },
-  {
-    "Davidyz/VectorCode",
-    version = "*",
-    dependencies = { "nvim-lua/plenary.nvim" },
-  },
-  {
-    "olimorris/codecompanion.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-treesitter/nvim-treesitter",
-      "Davidyz/VectorCode",
-    },
-    opts = {
-      extensions = {
-        vectorcode = {
-          opts = {
-            tool_group = {
-              enabled = true,
-            },
-          },
-        },
-      },
-      -- NOTE: The log_level is in `opts.opts` if you need debugging
-      -- opts = {
-      --   log_level = "DEBUG",
-      -- },
-    },
-  },
 }
