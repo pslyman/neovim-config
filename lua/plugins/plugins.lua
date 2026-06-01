@@ -67,7 +67,7 @@ return {
     build = ":TSUpdate",
   },
   {
-    "sindrets/diffview.nvim",
+    "dlyongemallo/diffview-plus.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       keymaps = {
