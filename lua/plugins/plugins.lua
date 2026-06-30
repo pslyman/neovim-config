@@ -5,6 +5,7 @@ return {
   -- Colorscheme
   {
     "whatyouhide/vim-gotham",
+    commit = "747ee82960b4a7ed75ac133bb84bfc02b5ac9e27",
     lazy = false,
     priority = 1000,
   },
@@ -15,12 +16,6 @@ return {
     },
   },
   { "nvim-tree/nvim-web-devicons", opts = {} },
-  {
-    "ibhagwan/fzf-lua",
-    -- optional for icon support
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {},
-  },
   {
     "folke/snacks.nvim",
     opts = {
@@ -56,9 +51,6 @@ return {
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
     opts = {},
-  },
-  {
-    "BurntSushi/ripgrep",
   },
   {
     "nvim-treesitter/nvim-treesitter",
