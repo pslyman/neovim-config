@@ -5,11 +5,6 @@ return {
   -- Colorscheme
   {
     "whatyouhide/vim-gotham",
-    -- Pin: latest commit d3dbb47 references undefined palette key `deepblue`
-    -- (colors/gotham.vim:279 `s:Col('Float','cyan','deepblue')`) -> E716 on load,
-    -- so LazyVim falls back to habamax. 747ee82 is the last good commit.
-    -- Remove this pin once upstream fixes the missing `deepblue` color.
-    commit = "747ee82960b4a7ed75ac133bb84bfc02b5ac9e27",
     lazy = false,
     priority = 1000,
   },
